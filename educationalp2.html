@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adapting a Historical Space for Educational Use</title>
+    <style>
+        /* General body styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        /* Main page layout with two columns */
+        .page-container {
+            display: grid;
+            grid-template-columns: 70% 30%; /* Left 70%, Right 30% */
+            width: 100%;
+            height: 100vh;
+            overflow: hidden; /* Prevent overflow of the entire page */
+        }
+
+        /* Left grid container styling */
+        .left-container {
+            padding: 20px;
+            background-color: #ffffff;
+            overflow-y: auto; /* Add vertical scroll if content exceeds height */
+        }
+
+        .section-title {
+            font-size: 20px;
+            margin-top: 20px; /* Adjust margin to align with the right section */
+            margin-bottom: 10px;
+            text-align: left;
+        }
+
+        .section-line {
+            border-bottom: 1px solid rgb(183, 182, 182);
+            margin-bottom: 20px;
+            width: 100%; /* Full width of the container */
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+            grid-auto-rows: 200px; /* All rows have a fixed height */
+            gap: 20px; /* Increased gap between grid items */
+            padding: 20px 0;
+        }
+
+        /* Grid item styling */
+        .grid-item {
+            background-color: #ddd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            height: 100%; /* Ensures the grid-item maintains the uniform height */
+        }
+
+        .grid-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensure image covers the grid area */
+            border-radius: 3px;
+        }
+
+        /* Right container styling (Info column) */
+        .info-column {
+            padding: 20px;
+            background-color: #f9faf8;
+            border-left: 2px solid #ccc;
+            overflow-y: auto; /* Add vertical scroll if content exceeds height */
+        }
+
+        .info-column h2 {
+            margin-top: 20px; /* Align with the title on the left */
+            font-size: 20px;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+
+        /* Line under the title */
+        .info-column .line {
+            border-bottom: 2px solid #000;
+            margin-bottom: 20px;
+            width: 100%; /* Full width of the container */
+        }
+
+        .info-column p {
+            margin: 10px 0;
+        }
+
+        .text-grey {
+            color: grey;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <!-- Left Projects Grid with sections -->
+        <div class="left-container">
+            <!-- Section 1 -->
+            <div class="section-title">Site and Context</div>
+            <div class="section-line"></div>
+            <div class="grid-container">
+                <div class="grid-item"><img src="D:/apply 2023/portfolio/BAGHMELI/ilustrator/site/site.png" alt="Image 1"></div>
+                <div class="grid-item"><img src="D:\apply 2023\portfolio\BAGHMELI\baghmeli\Ax site/2.jpg" alt="Image 2"></div>
+                <div class="grid-item"><img src="D:/apply 2023/portfolio/BAGHMELI/baghmeli/Ax site/24.jpg" alt="Image 3"></div>
+            </div>
+
+            <!-- Section 2 -->
+            <div class="section-title">Design Approach</div>
+            <div class="section-line"></div>
+            <div class="grid-container">
+                <div class="grid-item"><img src="" alt="Image 4"></div>
+                <div class="grid-item"><img src="" alt="Image 5"></div>
+                <div class="grid-item"><img src="D:\apply 2023\portfolio\BAGHMELI\baghmeli\pc/3.jpg" alt="Image 6"></div>
+            </div>
+
+            <!-- Section 3 -->
+            <div class="section-title">Final Renderings</div>
+            <div class="section-line"></div>
+            <div class="grid-container">
+                <div class="grid-item" style="grid-row: span 2;"><img src="D:/apply 2023/portfolio/BAGHMELI/ilustrator/plan/plan-01.svg" alt="Image 7"></div>
+                <div class="grid-item"><img src="D:/apply 2023/portfolio/BAGHMELI/baghmeli/jpj/edit.png" alt="Image 8"></div>
+                <div class="grid-item"><img src="D:\apply 2023\portfolio\BAGHMELI\baghmeli\jpj/c.jpg" alt="Image 9"></div>
+                <div class="grid-item" style="grid-column: span 2;"><img src="D:/apply 2023/portfolio/BAGHMELI/ilustrator/secpp/secpp-01.svg" alt="Image 10,11"></div>
+            </div>
+
+  
+        </div>
+
+        <!-- Right Info Column -->
+        <div class="info-column">
+            <h2>Adapting a Historical Space for Educational Use</h2>
+            <div class="line"></div> <!-- Line under the title -->
+            <p>The goal of this project is to address the challenges of repurposing a historical building for educational purposes. Key challenges include adapting the high ceilings and long, brick-covered corridors to create a more varied and functional space. The design seeks to preserve the historical character while introducing elements that enhance the building's suitability for modern educational needs.</p>
+            <div class="text-grey">
+                <p>Interior Architectural Design 3</p>
+                <p>University of Art</p>
+                <p>January 2020</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adaptive Façade System</title>
+    <style>
+        /* General body styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        /* Main page layout with two columns */
+        .page-container {
+            display: grid;
+            grid-template-columns: 70% 30%; /* Left 70%, Right 30% */
+            width: 100%;
+            height: 100vh;
+            overflow: hidden; /* Prevent overflow of the entire page */
+        }
+
+        /* Left grid container styling */
+        .left-container {
+            padding: 20px;
+            background-color: #ffffff;
+            overflow-y: auto; /* Add vertical scroll if content exceeds height */
+            
+        }
+
+        .section-title {
+            font-size: 20px;
+            margin-top: 20px; /* Adjust margin to align with the right section */
+            margin-bottom: 10px;
+            text-align: left;
+        }
+
+        .section-titles-container {
+            display: flex;
+            gap: 270px; /* Adjust spacing as needed */
+        }
+
+        .section-line {
+            border-bottom: 1px solid rgb(183, 182, 182);
+            margin-bottom: 20px;
+            width: 100%; /* Full width of the container */
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* 3 equal columns */
+            gap: 20px; /* Increased gap between grid items */
+            padding: 20px 0;
+        }
+
+        /* Grid item styling */
+        .grid-item {
+            background-color: #ddd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .grid-item img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 3px;
+        }
+
+        /* Right container styling (Info column) */
+        .info-column {
+            padding: 20px;
+            background-color: #f9faf8;
+            border-left: 2px solid #ccc;
+            overflow-y: auto; /* Add vertical scroll if content exceeds height */
+        }
+
+        .info-column h2 {
+            margin-top: 20px; /* Align with the title on the left */
+            font-size: 20px;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+
+        /* Line under the title */
+        .info-column .line {
+            border-bottom: 2px solid #000;
+            margin-bottom: 20px;
+            width: 100%; /* Full width of the container */
+        }
+
+        .info-column p {
+            margin: 10px 0;
+        }
+
+        .text-grey {
+            color: grey;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <!-- Left Projects Grid with sections -->
+        <div class="left-container">
+            <!-- Section 1 -->
+            <div class="section-titles-container">
+                <div class="section-title">variable opening by rotation</div>
+                <div class="section-title">from manually to motorization rotation</div>
+            </div>
+            <div class="section-line"></div>
+            <div class="grid-container">
+                <div class="grid-item" style="grid-column: span 2;"><img src="1 gride kinetic.svg" alt="Image 1"></div>
+                <div class="grid-item" style="grid-column: span 2;"><img src="2 gride kinetic.svg" alt="Image 2"></div>
+            </div>
+
+            <!-- Section 2 -->
+            <div class="section-title">rotation and motorization examined through integrated and seporated modules, but seprated modules worked better</div>
+            <div class="section-line"></div>
+
+            <!-- Section 3 -->
+            <div class="section-title">seprated parts</div>
+            <div class="section-line"></div>
+            <div class="grid-container">
+                
+                <div class="grid-item"><img src="D:/apply 2023/portfolio/kINETIC/illustrator/diagram copy-01.svg" alt=" Image 5"></div>
+                <div class="grid-item"><img src="D:/apply 2023/portfolio/kINETIC/illustrator/diagram copy-01.svg" alt=" Image 6"></div>  
+                <div class="grid-item"><img src="D:\apply 2023\portfolio\kINETIC\process/5 - Copy.jpg" alt="Image 7"></div>
+                <div class="grid-item"><img src="D:/apply 2023/portfolio/kINETIC/process/7.jpg" alt="Image 8"></div>
+            </div>
+        </div>
+
+        <!-- Right Info Column -->
+        <div class="info-column">
+            <h2>Adaptive Façade System</h2>
+            <div class="line"></div> <!-- Line under the title -->
+            <p>This project aimed to develop an adaptive façade system based on the logic of Kaleidocycle origami. Programmed using Arduino, the façade rotates between 0 and 100 degrees, transitioning from semi-closed to fully closed views. This dynamic movement provides responsive control over light, privacy, and ventilation.</p>
+            <div class="text-grey">
+                <p>Interior Architectural Technologies</p>
+                <p>University of Art</p>
+                <p>October 2019</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chair Design for the 2021 Seat Prize</title>
+    <style>
+        /* General body styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        /* Main page layout with two columns */
+        .page-container {
+            display: grid;
+            grid-template-columns: 70% 30%; /* Left 70%, Right 30% */
+            width: 100%;
+            height: 100vh;
+            overflow: hidden; /* Prevent overflow of the entire page */
+        }
+
+        /* Left grid container styling */
+        .left-container {
+            padding: 20px;
+            background-color: #ffffff;
+            overflow-y: auto; /* Add vertical scroll if content exceeds height */
+        }
+
+        .section-title {
+            font-size: 20px;
+            margin-top: 20px; /* Adjust margin to align with the right section */
+            margin-bottom: 10px;
+            text-align: left;
+        }
+
+        .section-line {
+            border-bottom: 1px solid rgb(183, 182, 182);
+            margin-bottom: 20px;
+            width: 100%; /* Full width of the container */
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px; /* Increased gap between grid items */
+            padding: 20px 0;
+        }
+
+        /* Grid item styling */
+        .grid-item {
+            background-color: #ddd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .grid-item img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 3px;
+        }
+
+        /* Right container styling (Info column) */
+        .info-column {
+            padding: 20px;
+            background-color: #f9faf8;
+            border-left: 2px solid #ccc;
+            overflow-y: auto; /* Add vertical scroll if content exceeds height */
+        }
+
+        .info-column h2 {
+            margin-top: 20px; /* Align with the title on the left */
+            font-size: 20px;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+
+        /* Line under the title */
+        .info-column .line {
+            border-bottom: 2px solid #000;
+            margin-bottom: 20px;
+            width: 100%; /* Full width of the container */
+        }
+
+        .info-column p {
+            margin: 10px 0;
+        }
+
+        .text-grey {
+            color: grey;
+        }
+
+        .intro-picture {
+            width: 150px;
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <!-- Left Projects Grid with 4 sections -->
+        <div class="left-container">
+            <!-- Section 1 -->
+            <div class="section-title">figure 1</div>
+            <div class="section-line"></div>
+            <div class="grid-container">
+                <div class="grid-item"><img src="D:/apply 2023/portfolio/MOBL/PNG-WEB/1.png" alt="Image 1"></div>
+                <div class="grid-item"><img src="D:/apply 2023/portfolio/MOBL/PNG-WEB/2.png" alt="Image 2"></div>
+                <div class="grid-item"><img src="D:/apply 2023/portfolio/MOBL/PNG-WEB/3.png" alt="Image 3"></div>
+            </div>
+
+            <!-- Section 2 -->
+            <div class="section-title">assembling</div>
+            <div class="section-line"></div>
+            <div class="grid-container">
+                <div class="grid-item"><img src="D:/apply 2023/portfolio/MOBL/PNG-WEB/4.png" alt="Image 4"></div>
+                <div class="grid-item"><img src="D:/apply 2023/portfolio/MOBL/PNG-WEB/5.png" alt="Image 5"></div>
+                <div class="grid-item"><img src="D:/apply 2023/portfolio/MOBL/PNG-WEB/6.png" alt="Image 6"></div>
+            </div>
+
+            <!-- Section 3 -->
+            <div class="section-title">disassembling</div>
+            <div class="section-line"></div>
+            <div class="grid-container">
+                <div class="grid-item"><img src="D:/apply 2023/portfolio/MOBL/PNG-WEB/7.png" alt="Image 7"></div>
+                <div class="grid-item"><img src="D:/apply 2023/portfolio/MOBL/PNG-WEB/8.png" alt="Image 8"></div>
+                <div class="grid-item"><img src="D:/apply 2023/portfolio/MOBL/PNG-WEB/9.png" alt="Image 9"></div>
+            </div>
+
+            <!-- Section 4 -->
+            <div class="section-title">figure 2</div>
+            <div class="section-line"></div>
+            <div class="grid-container">
+                <div class="grid-item"><img src="D:/apply 2023/portfolio/MOBL/PNG-WEB/10.png" alt="Image 10"></div>
+                <div class="grid-item"><img src="D:/apply 2023/portfolio/MOBL/PNG-WEB/11.png" alt="Image 11"></div>
+                <div class="grid-item"><img src="D:/apply 2023/portfolio/MOBL/PNG-WEB/12.png" alt="Image 12"></div>
+            </div>
+        </div>
+
+        <!-- Right Info Column -->
+        <div class="info-column">
+            <h2>Chair Design for the 2021 Seat Prize</h2>
+            <div class="line"></div> <!-- Line under the title -->
+            <p>This chair was designed to accommodate both single and multiple users. By reconfiguring its structure and rotating its components, it can transform from a single seat into a table with stools. Created for the 2021 Seat Prize competition in Isfahan, Iran, this design reached the final stage and was showcased as a finalist at the Safavi House exhibition.</p>
+            <div class="text-grey">
+                <p>Seat Prize 2021</p>
+                <p>March 2021</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
