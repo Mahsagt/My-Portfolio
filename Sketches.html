@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architectural Sketches</title>
+    <style>
+        /* General body styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            min-height: 100vh;
+            box-sizing: border-box;
+            background-color: #f0f0f0;
+        }
+
+        /* Main page layout */
+        .page-container {
+            display: grid;
+            grid-template-columns: 70% 30%; /* Left 70%, Right 30% */
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* Left container styling for grids */
+        .left-container {
+            padding: 20px;
+            background-color: #ffffff;
+            overflow-y: auto; /* Add vertical scroll if content exceeds height */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Style for each grid section */
+        .grid-section {
+            margin-bottom: 20px; /* Add spacing between rows */
+            display: flex;
+            justify-content: center; /* Center the grid horizontally */
+            width: 100%; /* Ensure it takes the full width of the container */
+        }
+
+        .grid-item {
+            background-color: #ddd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            border-radius: 5px;
+            width: 33%; /* Take up one-third of the space */
+            padding: 10px;
+        }
+
+        .grid-item img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 3px;
+        }
+
+        /* Right container styling */
+        .info-column {
+            padding: 20px;
+            background-color: #f9faf8;
+            border-left: 2px solid #ccc;
+            overflow-y: auto; /* Add vertical scroll if content exceeds height */
+        }
+
+        .info-column h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .info-column .line {
+            border-bottom: 2px solid #000;
+            margin-bottom: 20px;
+            width: 100%; /* Full width of the container */
+        }
+
+        .info-column p {
+            margin: 10px 0;
+        }
+        .text-grey {
+            color: grey;
+        }
+        .note-box {
+            font-size: 16px;
+            text-align: left;
+            line-height: 1.6;  
+            margin-bottom: 10px; 
+            margin-top: 0; 
+        }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <!-- Left Projects Grid -->
+        <div class="left-container">
+            <!-- First grid section -->
+            <div class="grid-section">
+                <div class="grid-item"><img src="D:\Portfolio- veb\html-css-course\sketches images/plan2.png" alt="Image 1"></div>
+            </div>
+            <!-- Second grid section -->
+            <div class="grid-section">
+                <div class="grid-item"><img src="D:\Portfolio- veb\html-css-course\sketches images/plan3.png" alt="Image 2"></div>
+            </div>
+            <!-- Third grid section -->
+            <div class="grid-section">
+                <div class="grid-item"><img src="D:\Portfolio- veb\html-css-course\sketches images/sec1.png" alt="Image 3"></div>
+            </div>
+            <!-- Fourth grid section -->
+            <div class="grid-section">
+                <div class="grid-item"><img src="D:\Portfolio- veb\html-css-course\sketches images/plan1.png" alt="Image 4"></div>
+            </div>
+        </div>
+
+        <!-- Right Info Column -->
+        <div class="info-column">
+            <h2>Architectural Sketches</h2>
+            <div class="line"></div>
+            <div class="note-box">
+                <p>This section showcases architectural sketches and drawings that translate concepts into designs.</p>
+            </div>
+            <div class="text-grey">
+                <p>Architectural presentation</p>
+                <p>2018</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

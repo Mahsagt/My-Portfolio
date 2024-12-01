@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mahsa's Projects</title>
     <style>
-        /* General body styling */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -13,47 +12,42 @@
             display: flex;
             min-height: 100vh;
             box-sizing: border-box;
-        }
 
-        /* Main page layout with two columns, reversing the position */
+        }
         .page-container {
             display: grid;
-            grid-template-columns: 70% 30%; /* Swapping left and right container */
+            grid-template-columns: 70% 30%; /
             width: 100%;
             height: 100vh;
-        }
 
-        /* Left container styling (Projects section now on the left) */
+        }
         .left-container {
             padding: 20px;
             background-color: #ffffff;
             display: flex;
             flex-direction: column;
-            align-items: center; /* Centers all content horizontally */
+            align-items: center;
         }
 
         .projects-header {
             font-size: 24px;
             margin-bottom: 10px;
-            text-align: center; /* Center text inside the container */
+            text-align: center; 
         }
 
         .projects-line {
             border-bottom: 2px solid #000;
             margin-bottom: 20px;
-            width: 100%; /* Full width of the container */
+            width: 100%; 
         }
-
-        /* Grid container for projects */
         .grid-container {
             display: flex;
             flex-direction: column;
-            align-items: center; /* Center the grid items horizontally */
+            align-items: center;
             gap: 20px;
-            width: 100%; /* Ensures it takes up the full width */
+            width: 100%; 
         }
 
-        /* Grid item styling */
         .grid-item {
             display: grid;
             grid-template-rows: auto 1fr;
@@ -61,8 +55,8 @@
             border: 1px solid #ddd;
             border-radius: 4px;
             overflow: hidden;
-            width: 30%; /* Standard width for grid items, adjust as needed */
-            margin: 0 auto; /* Center the grid items in the row */
+            width: 30%; 
+            margin: 0 auto;
         }
 
         .top-row {
@@ -71,9 +65,9 @@
             align-items: center;
             padding: 0;
             background-color: #ffffff;
-            height: 150px;
+            height: 100%;
             width: 100%;
-            overflow: hidden; /* Ensure that images fit within the container */
+            overflow: hidden; 
         }
 
         .top-row img {
@@ -81,11 +75,16 @@
             height: 100%;
             object-fit: cover;
             display: block;
+            filter: grayscale(100%); /* Make the image appear grey */
+            transition: filter 0.3s ease; /* Smooth transition effect */
+        }
+        .top-row img:hover {
+            filter: grayscale(0%); /* Restore original color on hover */
         }
 
         .bottom-row {
             display: grid;
-            grid-template-columns: 1fr 3fr; /* Picture on the left, text on the right */
+            grid-template-columns: 1fr 3fr; 
             padding: 10px;
             background-color: #ffffff;
             gap: 2px;
@@ -99,7 +98,7 @@
         }
 
         .bottom-left img {
-            max-width: 18px; /* Adjust the image size */
+            max-width: 18px; 
             height: auto;
             padding: 5px;
         }
@@ -112,12 +111,10 @@
             font-size: 12px;
         }
 
-        /* Remove the margin for the last paragraph */
         .bottom-right p:last-child {
            margin-bottom: 0;
         }
 
-        /* Right container styling (About Me section) */
         .right-container {
             padding: 20px;
             background-color: #f9faf8;
@@ -134,10 +131,9 @@
         .line {
             border-bottom: 2px solid #000;
             margin-bottom: 20px;
-            width: 100%; /* Full width of the container */
+            width: 100%; 
         }
 
-        /* Image box with note section */
         .image-box {
             display: flex;
             flex-direction: column;
@@ -145,24 +141,23 @@
         }
 
         .intro-picture {
-            width: 150px; /* Adjust the size as needed */
+            width: 150px; 
             height: auto;
-            border-radius: 50%; /* Makes the image circular */
-            margin-bottom: 15px; /* Space between image and note */
+            border-radius: 50%; 
+            margin-bottom: 15px; 
         }
 
         .note-box {
             font-size: 16px;
             text-align: left;
-            line-height: 1.6;  /* Adjust line height to control space between lines */
-            margin-bottom: 10px; /* Space between paragraphs */
-            margin-top: 0; /* Optional: Remove top margin if needed */
+            line-height: 1.6;  
+            margin-bottom: 10px; 
+            margin-top: 0; 
         }
 
     </style>
 </head>
 <body>
-    <!-- Main page layout -->
     <div class="page-container">
         <!-- Left container for Projects section (swapped) -->
         <div class="left-container">
@@ -172,14 +167,36 @@
 
             <!-- Grid Container for Projects -->
             <div class="grid-container">
+
+
                 <!-- First grid item -->
                 <div class="grid-item">
                     <div class="top-row">
-                        <img src="D:/apply 2023/portfolio/p1/render biroon/14.png" alt="Top Image 1">
+                        <a href="chairp2al2.html" target="_blank">
+                            <img src="moblintro.svg" alt="Top Image 5">
+                        </a>
                     </div>
                     <div class="bottom-row">
                         <div class="bottom-left">
-                            <img src="co-workinglogo.svg" alt="Bottom Image 1">
+                            <img src="Chairlogo.svg" alt="Bottom Image 5">
+                        </div>
+                        <div class="bottom-right">
+                            <p>Chair Design</p>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- second grid item -->
+                <div class="grid-item">
+                    <div class="top-row">
+                        <a href="co-workingp2.html" target="_blank">
+                            <img src="D:/apply 2023/portfolio/p1/render biroon/14.png" alt="Top Image 1">
+                        </a>
+                    </div>
+                    <div class="bottom-row">
+                        <div class="bottom-left">
+                         <img src="co-workinglogo.svg" alt="Bottom Image 1">
                         </div>
                         <div class="bottom-right">
                             <p>Co-working Space</p>
@@ -188,10 +205,12 @@
                     </div>
                 </div>
 
-                <!-- Second grid item -->
+                <!-- third grid item -->
                 <div class="grid-item">
                     <div class="top-row">
-                        <img src="D:\apply 2023\portfolio\BAGHMELI\baghmeli\jpj/edit.png" alt="Top Image 2">
+                        <a href="educationalp2.html" target="_blank">
+                            <img src="D:\apply 2023\portfolio\BAGHMELI\baghmeli\jpj/edit.png" alt="Top Image 2">
+                        </a>
                     </div>
                     <div class="bottom-row">
                         <div class="bottom-left">
@@ -203,11 +222,15 @@
                         </div>
                     </div>
                 </div>
+ 
 
-                <!-- third grid item -->
+
+                <!-- fifth grid item -->
                 <div class="grid-item">
                     <div class="top-row">
-                        <img src="sketchesintro.svg" alt="Top Image 3">
+                        <a href="sketchesp2.html" target="_blank">
+                             <img src="sketchesintro.svg" alt="Top Image 3">
+                        </a>
                     </div>
                     <div class="bottom-row">
                         <div class="bottom-left">
@@ -219,39 +242,25 @@
                         </div>
                     </div>
                 </div>
-                
-                <!-- forth grid item -->
+
+                <!-- sixth grid item -->
                 <div class="grid-item">
                     <div class="top-row">
-                        <img src="kineticintro.svg" alt="Top Image 4">
+                        <a href="paintingsp2.html" target="_blank">
+                        <img src="D:\Portfolio- veb\html-css-course\painting images/paintingsintro.JPG" alt="Top Image 3">
+                        </a>
                     </div>
                     <div class="bottom-row">
                         <div class="bottom-left">
-                            <img src="kineticlogo.svg" alt="Bottom Image 4">
+                            <img src="sketcheslogo.svg" alt="Bottom Image 3">
                         </div>
                         <div class="bottom-right">
-                            <p>Adaptive Façade System</p>
-                            <p></p>
-                        </div>
-                    </div>
-                </div>
-                <!-- fifth grid item -->
-                    <div class="grid-item">
-                        <div class="top-row">
-                            <img src="moblintro.svg" alt="Top Image 5">
-                        </div>
-                        <div class="bottom-row">
-                            <div class="bottom-left">
-                            <img src="Chairlogo.svg" alt="Bottom Image 5">
-                        </div>
-                        <div class="bottom-right">
-                            <p>Chair Design</p>
+                            <p>Artistic Paintings</p>
                             <p></p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Add more grid items similarly if needed -->
             </div>
         </div>
 
@@ -265,7 +274,7 @@
             <div class="image-box">
                 <img src="D:\apply 2023\portfolio\ax/IMG_20220626_231627 - Copy.jpg" alt="Mahsa Ghanad Torshizi" class="intro-picture">
                 <div class="note-box">
-                    <p>I am Mahsa Ghanad Torshizi, with a Bachelor’s in Architectural Engineering and a Master’s in Interior Architecture, where I focused on sustainable design principles and occupant well-being. My passion lies in exploring how environments can balance human needs with environmental responsibility. I have worked extensively on adaptive reuse projects, integrating responsive architecture with sensor and actuator technology, and designing modular, flexible objects that support sustainable, user-centered spaces. I am dedicated to advancing the interaction between people and buildings to enhance both functionality and satisfaction.</p>
+                    <p>I am Mahsa Ghanad Torshizi, an architectural and interior designer with expertise in sustainable design and adaptive reuse. Holding a Bachelor’s in Architectural Engineering and a Master’s in Interior Architecture, my work bridges creativity and environmental responsibility. My projects focus on modular designs, responsive architecture, and creating user-centered spaces that enhance both functionality and well-being. I am passionate about shaping spaces where people and buildings coexist harmoniously.</p>
                 </div>
             </div>
         </div>
