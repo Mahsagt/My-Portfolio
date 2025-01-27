@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adaptive Modular Platform for Flexible Workspaces</title>
     <style>
-        /* General body styling */
+       
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -15,32 +15,30 @@
             box-sizing: border-box;
         }
 
-        /* Main page layout with two columns */
         .page-container {
             display: grid;
-            grid-template-columns: 70% 30%; /* Left 70%, Right 30% */
+            grid-template-columns: 70% 30%; 
             width: 100%;
             height: 100vh;
-            overflow: hidden; /* Prevent overflow of the entire page */
+            overflow: hidden; 
         }
 
-        /* Left grid container styling */
         .left-container {
             padding: 20px;
             background-color: #ffffff;
-            overflow-y: auto; /* Add vertical scroll if content exceeds height */
+            overflow-y: auto; 
         }
 
         .section-title {
             font-size: 20px;
-            margin-top: 20px; /* Adjust margin to align with the right section */
+            margin-top: 20px; 
             margin-bottom: 10px;
             text-align: left;
         }
 
         .section-titles-container {
             display: flex;
-            gap: 90px; /* Adjust spacing as needed */
+            gap: 90px; 
             font-size: 12px; 
             color: grey;
         }
@@ -50,17 +48,16 @@
         .section-line {
             border-bottom: 1px solid rgb(183, 182, 182);
             margin-bottom: 20px;
-            width: 100%; /* Full width of the container */
+            width: 100%; 
         }
 
         .grid-container {
             display: grid;
-            grid-template-columns: repeat(3, 1fr); /* 3 columns */
-            gap: 20px; /* Consistent gap with the first code */
+            grid-template-columns: repeat(3, 1fr); 
+            gap: 20px; 
             padding: 20px 0;
         }
 
-        /* Grid item styling */
         .grid-item {
             background-color: #ddd;
             display: flex;
@@ -68,7 +65,7 @@
             align-items: center;
             border: 1px solid #ccc;
             border-radius: 5px;
-            height: 250px; /* Set a fixed height */
+            height: 250px; 
         }
 
         .grid-item img {
@@ -76,27 +73,24 @@
             height: 100%;
             object-fit: cover;
             border-radius: 3px;
-            background-color: #FFFFFF; /* Set the background color to white */
+            background-color: #FFFFFF; 
         }
 
-        /* Consistent merge style */
         .grid-item.merge {
-            grid-column: 1 / span 3; /* Span across all 3 columns */
-            grid-row: 3 / span 2; /* Span across 2 rows */
+            grid-column: 1 / span 3; 
+            grid-row: 3 / span 2; 
         }
 
-         /* Custom styling for the second grid container with 4 columns */
          .grid-container-4-cols {
-            grid-template-columns: repeat(4, 1fr); /* 4 columns */
-            gap: 20px; /* Maintain consistent gap */
+            grid-template-columns: repeat(4, 1fr); 
+            gap: 20px; 
         }
         
-        /* Right container styling (Info column) */
         .info-column {
             padding: 20px;
             background-color: #f9faf8;
             border-left: 2px solid #ccc;
-            overflow-y: auto; /* Add vertical scroll if content exceeds height */
+            overflow-y: auto; 
         }
 
         .info-column h2 {
@@ -106,7 +100,6 @@
             text-align: left;
         }
 
-        /* Line under the title */
         .info-column .line {
             border-bottom: 2px solid #000;
             margin-bottom: 20px;
